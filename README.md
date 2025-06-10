@@ -106,6 +106,18 @@ Follow these steps to get the environment ready:
     uv pip install -r requirements.txt
     ```
 
+## Setting up API Keys
+Before running the tests, you need to set up the API keys for the AI model that you're going to use - be it OpenAI, Gemini or local models like LLama models from Meta.
+
+
+Create a file named `.env`, which is similar to the `.env.example` file 
+
+Provide the API key for the Model - for eg for OpenAI models set 
+
+```
+OPENAI_API_KEY=sk-proj-xxxxxxxx
+```
+
 ## Running Tests
 
 After setting up the environment and activating the virtual environment, you can run the tests.
