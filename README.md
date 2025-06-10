@@ -6,25 +6,6 @@ This document outlines the steps to set up the Python development environment us
 
 Before proceeding, ensure you have Python 3.11 installed on your system.
 
-### Install pyenv (optional, for advanced users)
-
-If you want to manage multiple Python versions, you can use `pyenv`.
-
-#### macOS
-Install `pyenv` using Homebrew:
-```bash
-brew install pyenv
-```
-After installation, follow any instructions provided by Homebrew to add `pyenv` to your shell profile (e.g., `.zshrc` or `.bash_profile`).
-
-#### Windows
-For Windows, use [pyenv-win](https://github.com/pyenv-win/pyenv-win):
-```powershell
-git clone https://github.com/pyenv-win/pyenv-win.git $HOME/.pyenv
-setx PYENV $HOME\.pyenv
-setx PATH "%PYENV%\pyenv-win\bin;%PYENV%\pyenv-win\shims;%PATH%"
-```
-Refer to the [pyenv-win documentation](https://github.com/pyenv-win/pyenv-win) for more details.
 
 ### Check if Python is Installed
 
@@ -69,6 +50,27 @@ If Python is **not installed** or the version is lower than 3.11, follow the ste
 4. Complete the installation and verify by running `python --version` in Command Prompt or PowerShell.
 
 ---
+
+### Install pyenv (optional, for advanced users)
+
+If you want to manage multiple Python versions, you can use `pyenv`.
+
+#### macOS
+Install `pyenv` using Homebrew:
+```bash
+brew install pyenv
+```
+After installation, follow any instructions provided by Homebrew to add `pyenv` to your shell profile (e.g., `.zshrc` or `.bash_profile`).
+
+#### Windows
+For Windows, use [pyenv-win](https://github.com/pyenv-win/pyenv-win):
+```powershell
+git clone https://github.com/pyenv-win/pyenv-win.git $HOME/.pyenv
+setx PYENV $HOME\.pyenv
+setx PATH "%PYENV%\pyenv-win\bin;%PYENV%\pyenv-win\shims;%PATH%"
+```
+Refer to the [pyenv-win documentation](https://github.com/pyenv-win/pyenv-win) for more details.
+
 
 ## Setup Steps
 
