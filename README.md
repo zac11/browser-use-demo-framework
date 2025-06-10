@@ -71,8 +71,44 @@ setx PATH "%PYENV%\pyenv-win\bin;%PYENV%\pyenv-win\shims;%PATH%"
 ```
 Refer to the [pyenv-win documentation](https://github.com/pyenv-win/pyenv-win) for more details.
 
+## Setting up API Keys
+Before running the tests, you need to set up the API keys for the AI model that you're going to use - be it OpenAI, Gemini or local models like LLama models from Meta.
+
+
+Create a file named `.env`, which is similar to the `.env.example` file 
+
+Provide the API key for the Model - for eg for OpenAI models set 
+
+```
+OPENAI_API_KEY=sk-proj-xxxxxxxx
+```
+
 
 ## Setup Steps
+To install and run everything all at once, follow the steps below - these scripts will do all the task of installing Python, setting up the environment, and running all the test files inside the `/scenarios` folder
+
+To use these scripts:
+
+On macOS: 
+Open a terminal, navigate to the project root, and run 
+```bash
+chmod +x shellscripts/setupMacOS.sh
+``` 
+to make the script executable. Then run 
+```bash
+./shellscripts/setupMacOS.sh
+```
+
+On Windows: 
+Open PowerShell, navigate to the project root, and run 
+```bash
+./shellscripts/setUpWindows.ps1
+```
+
+ You might need to adjust PowerShell execution policies (Set-ExecutionPolicy RemoteSigned) to run local scripts if you haven't already.
+
+
+## Setup Everything From Scratch
 
 Follow these steps to get the environment ready:
 
@@ -106,17 +142,6 @@ Follow these steps to get the environment ready:
     uv pip install -r requirements.txt
     ```
 
-## Setting up API Keys
-Before running the tests, you need to set up the API keys for the AI model that you're going to use - be it OpenAI, Gemini or local models like LLama models from Meta.
-
-
-Create a file named `.env`, which is similar to the `.env.example` file 
-
-Provide the API key for the Model - for eg for OpenAI models set 
-
-```
-OPENAI_API_KEY=sk-proj-xxxxxxxx
-```
 
 ## Running Tests
 
@@ -144,22 +169,3 @@ To run with the OpenAI model:
 PYTHONPATH=. python tests/run_all_tests.py --model=OpenAI
 ```
 
-To use these scripts:
-
-On macOS: 
-Open a terminal, navigate to the project root, and run 
-```bash
-chmod +x shellscripts/setupMacOS.sh
-``` 
-to make the script executable. Then run 
-```bash
-./shellscripts/setupMacOS.sh
-```
-
-On Windows: 
-Open PowerShell, navigate to the project root, and run 
-```bash
-./shellscripts/setUpWindows.ps1
-```
-
- You might need to adjust PowerShell execution policies (Set-ExecutionPolicy RemoteSigned) to run local scripts if you haven't already.
