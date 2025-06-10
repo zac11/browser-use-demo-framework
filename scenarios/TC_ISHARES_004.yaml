@@ -1,0 +1,10 @@
+id: TC_ISHARES_004
+title: Navigate and Extract NAV Total
+description: Test scenario to navigate to an ETF, select one (not the first), extract and print the NAV Total that has gone up, and navigate through the tabs.
+steps: 
+  - Go to ishares.com/us
+  - Go to Our Funds, then View All Funds
+  - Select the any ETF from the product but not the first ETF
+  - Click on the choosen ETF
+  - Select the value of NAV Total that has gone up and print the value
+  - And navigate on the tabs starting with Overview tab 

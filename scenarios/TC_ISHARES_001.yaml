@@ -1,0 +1,11 @@
+id: TC_ISHARES_001
+title: Validate ETFs are added to the comparison
+steps: 
+  - Go to ishares.com/us
+  - explore the 3 ETFs at the top section of the page
+  - From Asset Class filter, select Equity 
+  - Wait for the ETF to be added for comparison
+  - Validate that the ETF is added to the comparison
+  - Validate that each ETF is added to the comparison
+  - go to compare once all 3 ETFs are added
+  - give the investment objective of each ETF on comparison

@@ -1,0 +1,9 @@
+id: TC_ISHARES_002
+title: Validate ETF Ticker in PDF
+steps:
+  - Go to ishares.com/us
+  - Wait for 15 seconds
+  - Go to Our Funds , then View All Funds
+  - From the table row named Ticker Fund Name, click on any ETF
+  - Download the Fact sheet from the Deep Dive page
+  - Validate that ETF ticker is present in the PDF

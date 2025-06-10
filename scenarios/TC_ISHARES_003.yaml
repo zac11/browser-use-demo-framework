@@ -1,0 +1,7 @@
+id: TC_ISHARES_003
+title: Verify NAV Quarterly Option in Key Facts
+description: Test to verify the NAV Quarterly option in Key Facts section
+steps:
+  - Go to ishares.com/us
+  - Go to Our Funds, then View All Funds
+  - Click on Key Facts and Select NAV Quarterly option 

@@ -1,0 +1,9 @@
+browser_use
+pydantic
+langchain
+langchain-openai
+google-ai-generativelanguage
+pytest
+pytest-asyncio
+pyyaml
+pandas
