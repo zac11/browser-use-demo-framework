@@ -120,7 +120,7 @@ OPENAI_API_KEY=sk-proj-xxxxxxxx
 
 ## Running Tests
 
-After setting up the environment and activating the virtual environment, you can run the tests.
+After setting up the environment ,activating the virtual environment and adding the API keys, you can run the tests.
 
 ### Running a Single Test File
 
